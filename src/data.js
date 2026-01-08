@@ -1,67 +1,47 @@
+import salud from "/img/salud.jpg";
+import medio from "/img/medio.jpg";
+import comunitario from "/img/comunitario.jpg";
+import investigacion from "/img/investigacion.jpg";
+
 export const NEWS = [
   {
     id: 1,
     title: "Aumento en programas de salud comunitaria",
     date: "2025-11-10",
     category: "salud",
-    excerpt:
-      "Las autoridades locales lanzan programas de prevención y talleres comunitarios para fortalecer la salud pública.",
+    excerpt: "Las autoridades locales lanzan programas de prevención.",
     tags: ["salud", "comunidad"],
-    image: "/img/salud.jpg",
+    image: salud,
   },
   {
     id: 2,
-    title: "Estudio revela impacto ambiental en cuencas",
+    title: "Impacto ambiental en cuencas",
     date: "2025-10-25",
     category: "medio",
-    excerpt:
-      "Un nuevo estudio muestra alteraciones en la calidad de agua de varias cuencas agrícolas.",
-    tags: ["medio ambiente", "investigación"],
-    image: "/img/medio.jpg",
+    excerpt: "Estudio revela cambios en la calidad del agua.",
+    tags: ["medio ambiente"],
+    image: medio,
   },
   {
     id: 3,
-    title: "Proyecto participativo reduce mortalidad aviar",
+    title: "Proyecto reduce mortalidad aviar",
     date: "2025-09-02",
     category: "comunitario",
-    excerpt:
-      "Iniciativas locales han contribuido a reducir la mortandad en poblaciones de aves migratorias.",
-    tags: ["comunitario", "avifauna"],
-    image: "/img/comunitario.jpg",
+    excerpt: "Iniciativas locales reducen la mortandad.",
+    tags: ["comunitario"],
+    image: comunitario,
   },
   {
     id: 4,
-    title: "Investigadores publican datos sobre enfermedades emergentes",
+    title: "Datos sobre enfermedades emergentes",
     date: "2025-08-15",
     category: "investigacion",
-    excerpt:
-      "Datos preliminares sugieren la necesidad de vigilancia epidemiológica reforzada.",
-    tags: ["investigación", "salud"],
-    image: "/img/investigacion.jpg",
-  },
-
-  {
-    id: 5,
-    title: "Investigadores publican datos sobre enfermedades emergentes",
-    date: "2025-08-15",
-    category: "investigacion",
-    excerpt:
-      "Datos preliminares sugieren la necesidad de vigilancia epidemiológica reforzada.",
-    tags: ["investigación", "salud"],
-    image: "/img/investigacion.jpg",
-  },
-
-  {
-    id: 6,
-    title: "Investigadores publican datos sobre enfermedades emergentes",
-    date: "2025-08-15",
-    category: "investigacion",
-    excerpt:
-      "Datos preliminares sugieren la necesidad de vigilancia epidemiológica reforzada.",
-    tags: ["investigación", "salud"],
-    image: "/img/investigacion.jpg",
+    excerpt: "Investigadores publican nuevos datos.",
+    tags: ["investigación"],
+    image: investigacion,
   },
 ];
+
 
 export const MORT = [
   { year: 2021, cause: "Enfermedad infecciosa", cases: 120 },

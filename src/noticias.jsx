@@ -55,27 +55,27 @@ function Noticias() {
         <section className="news-list">
           {noticiasFiltradas.map(item => (
             <article className="news-card" key={item.id}>
-  <div className="news-image">
-    <img src={item.image} alt={item.title} />
-    <span className={`badge ${item.category}`}>
-      {item.category}
-    </span>
-  </div>
+              <div className="news-image">
+                <img src={item.image} alt={item.title} />
+                <span className={`badge ${item.category}`}>
+                  {item.category}
+                </span>
+              </div>
 
-  <div className="news-body">
-    <h3 className="news-title">{item.title}</h3>
+              <div className="news-body">
+                <h3 className="news-title">{item.title}</h3>
+                <p className="meta">📅 {item.date}</p>
+                <p className="excerpt">{item.excerpt}</p>
 
-    <p className="meta">📅 {item.date}</p>
+                <div className="tags">
+                  {item.tags.map((t, i) => (
+                    <span className="tag" key={i}>{t}</span>
+                  ))}
+                </div>
+              </div>
+            </article>
 
-    <p className="excerpt">{item.excerpt}</p>
 
-    <div className="tags">
-      {item.tags.map((t, i) => (
-        <span className="tag" key={i}>{t}</span>
-      ))}
-    </div>
-  </div>
-</article>
 
           ))}
         </section>
